@@ -1,6 +1,6 @@
 #echo "bash_profile"
 
-[ -r ~/.local/`uname`.bash_profile ] && . ~/.local/`uname`.bash_profile
-[ -r ~/.local/`hostname -s`.bash_profile ] && . ~/.local/`hostname -s`.bash_profile
+[ -r ~/.config/dotfiles/`uname`.bash_profile ] && . ~/.config/dotfiles/`uname`.bash_profile
+[ -r ~/.config/dotfiles/`hostname -s`.bash_profile ] && . ~/.config/dotfiles/`hostname -s`.bash_profile
 [ -r ~/.profile ] && . ~/.profile
 [ -r ~/.bashrc ] && . ~/.bashrc
