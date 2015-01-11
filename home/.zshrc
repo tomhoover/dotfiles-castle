@@ -9,4 +9,4 @@ homeshick --quiet refresh
 
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 # zsh completion is not working    https://github.com/andsens/homeshick/issues/89
-#compinit
+compinit
