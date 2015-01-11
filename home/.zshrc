@@ -8,5 +8,7 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 homeshick --quiet refresh
 
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-# zsh completion is not working    https://github.com/andsens/homeshick/issues/89
-compinit
+# zsh completion is not working -- https://github.com/andsens/homeshick/issues/89
+#compinit
+# sudo -s gives "insecure directories and files" error -- https://github.com/Homebrew/homebrew/issues/7801
+compinit -u
