@@ -1,2 +1,2 @@
 # keychain
-. ~/.keychain/$HOSTNAME-sh
+. ~/.keychain/`hostname -s`-sh
