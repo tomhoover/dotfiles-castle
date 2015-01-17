@@ -12,5 +12,8 @@ unset file;
 [ -r ~/.config/dotfiles/`hostname -s`.bashrc ] && . ~/.config/dotfiles/`hostname -s`.bashrc
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 homeshick --quiet refresh
+source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+
+#rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
