@@ -1,6 +1,7 @@
 # min  hr  dom  mon  dow   command
 
 @reboot $HOME/.dropbox-dist/dropboxd
+*/10 * * * * mv ~/Dropbox/IFTTT/Gmail/Hoover_Tom__FAA__Calendar.ics ~/Dropbox/Public > /dev/null 2>&1
 @hourly ~/bin/ddns
 @daily ~/bin/diskAlert > /dev/null 2>&1
 @weekly apt-mark showauto > ~/.config/apt/pkgs_auto.lst
