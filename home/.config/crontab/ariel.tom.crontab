@@ -1,0 +1,5 @@
+@daily  mv ~/tmp/Evernote\ import/* ~/Dropbox/iPad/-evernote_tom
+@weekly brew list > ~/.config/homebrew/brew.installed
+@weekly brew-cask list > ~/.config/homebrew/cask.installed
+
+30	01	*	*	*	/Users/tom/Library/Application\ Support/SuperDuper\!/Scheduled\ Copies/SDUtil -i || open file:///Users/tom/Library/Application\%20Support/SuperDuper\%21/Scheduled\%20Copies/Smart\%20Update\%20SDbackup\%20from\%20a.sdsp/Copy\%20Job.app
