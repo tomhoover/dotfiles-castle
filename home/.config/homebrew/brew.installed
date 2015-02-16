@@ -1,6 +1,7 @@
 autoconf
 bash-completion
 brew-cask
+colordiff
 duplicity
 exiftool
 gawk
@@ -9,12 +10,12 @@ getmail
 gettext
 glib
 gnupg
-hugo
 keychain
 libffi
 libpng
 librsync
 libssh2
+makedepend
 midnight-commander
 mr
 openssl
