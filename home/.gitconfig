@@ -2,8 +2,6 @@
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
-	# thanks to Pete Doherty - see http://gitready.com/intermediate/2009/03/04/pick-out-individual-commits.html
-	ll = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
 
 	# View the current working tree status using the short format
 	s = status -s
@@ -98,9 +96,6 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
-	# thanks to cdunn2001 - see http://stackoverflow.com/questions/136178/git-diff-handling-long-lines
-	pager = less -eiFRSX
-
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -146,7 +141,7 @@
 	# Use the Git 1.x.x default to avoid errors on machines with old Git
 	# installations. To use `simple` instead, add this to your `~/.extra` file:
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
-	default = simple
+	default = matching
 
 # URL shorthands
 
@@ -169,4 +164,3 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
-
