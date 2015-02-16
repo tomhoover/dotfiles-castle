@@ -3,13 +3,13 @@ bash-completion
 brew-cask
 duplicity
 exiftool
-fdupes
 gawk
 gdbm
 getmail
 gettext
 glib
 gnupg
+hugo
 keychain
 libffi
 libpng
