@@ -22,6 +22,8 @@ unset file;
 [ -r ~/.config/dotfiles/`uname`.bashrc ] && . ~/.config/dotfiles/`uname`.bashrc
 [ -r ~/.config/dotfiles/`hostname -s`.bashrc ] && . ~/.config/dotfiles/`hostname -s`.bashrc
 
+. ~/src/gh_rupa/z/z.sh
+
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 homeshick --quiet refresh
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
