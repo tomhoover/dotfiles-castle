@@ -30,3 +30,6 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/src/liquidprompt/liquidprompt
