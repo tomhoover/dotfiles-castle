@@ -1,3 +1,14 @@
+" vim-pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+autocmd VimEnter * Helptags
+" from vim-pathogen README: Normally to generate documentation, Vim expects
+" you to run :helptags on each directory with documentation (e.g., :helptags
+" ~/.vim/doc). Provided with pathogen.vim is a :Helptags command that does
+" this on every directory in your 'runtimepath'. If you really want to get
+" crazy, you could even invoke Helptags in your vimrc.
+
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
