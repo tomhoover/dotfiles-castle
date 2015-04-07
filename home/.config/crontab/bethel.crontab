@@ -13,6 +13,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
-*/10 * * * * root /home/tom/bin/remount_pool > /dev/null 2>&1
-10   0 * * * root /home/tom/bin/snapraid_diff_n_sync > /dev/null 2>&1
+# */10 * * * * root /home/tom/bin/remount_pool > /dev/null 2>&1
+10   5 * * * root /home/tom/bin/snapraid_diff_n_sync > /dev/null 2>&1
 #

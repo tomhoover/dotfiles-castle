@@ -19,12 +19,14 @@ biosdevname
 bsdmainutils
 bsdutils
 btsync
+build-essential
 busybox-initramfs
 busybox-static
 byobu
 bzip2
 ca-certificates
 cifs-utils
+colordiff
 command-not-found
 command-not-found-data
 console-setup
@@ -49,6 +51,7 @@ ed
 eject
 etckeeper
 ethtool
+fakeroot
 fdupes
 file
 findutils
@@ -65,6 +68,7 @@ geoip-database
 gettext-base
 gir1.2-glib-2.0
 git
+git-core
 gnupg
 gpgv
 grep
@@ -74,6 +78,7 @@ grub-pc
 gzip
 hdparm
 hostname
+htop
 ifupdown
 info
 init-system-helpers
@@ -91,6 +96,7 @@ irqbalance
 isc-dhcp-client
 isc-dhcp-common
 kbd
+kernel-package
 keyboard-configuration
 keychain
 keyutils
@@ -198,6 +204,7 @@ libmodule-pluggable-perl
 libmount1
 libmpdec2
 libncurses5
+libncurses5-dev
 libncursesw5
 libnewt0.52
 libnfnetlink0
@@ -281,7 +288,12 @@ linux-headers-3.13.0-32
 linux-headers-3.13.0-32-generic
 linux-headers-3.13.0-39
 linux-headers-3.13.0-39-generic
+linux-headers-3.18.6-031806
+linux-headers-3.18.6-031806-generic
+linux-headers-3.18.6-aufs
 linux-headers-generic
+linux-image-3.18.6-031806-generic
+linux-image-3.18.6-aufs
 locales
 lockfile-progs
 login
@@ -330,6 +342,7 @@ pciutils
 perl
 perl-base
 perl-modules
+plexmediaserver
 plymouth
 plymouth-theme-ubuntu-text
 policykit-1
@@ -377,6 +390,7 @@ python3-software-properties
 python3-update-manager
 python3.4
 python3.4-minimal
+rbenv
 rcs
 readline-common
 resolvconf
