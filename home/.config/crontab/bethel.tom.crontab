@@ -1,3 +1,5 @@
+PATH=/usr/local/bin:/bin:/usr/bin
+
 # min  hr  dom  mon  dow   command
 
 @reboot $HOME/.dropbox-dist/dropboxd

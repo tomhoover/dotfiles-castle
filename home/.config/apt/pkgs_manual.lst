@@ -79,6 +79,7 @@ gzip
 hdparm
 hostname
 htop
+idle3-tools
 ifupdown
 info
 init-system-helpers
@@ -328,6 +329,7 @@ ncurses-term
 net-tools
 netbase
 netcat-openbsd
+nfs-kernel-server
 ntfs-3g
 ntpdate
 openssh-client
@@ -430,6 +432,7 @@ telnet
 time
 tmux
 transmission-daemon
+tree
 tzdata
 ubuntu-keyring
 ubuntu-minimal
