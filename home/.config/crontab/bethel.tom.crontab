@@ -1,3 +1,4 @@
+SHELL=/bin/bash
 PATH=/usr/local/bin:/bin:/usr/bin
 
 # min  hr  dom  mon  dow   command

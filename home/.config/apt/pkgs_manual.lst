@@ -19,6 +19,7 @@ biosdevname
 bsdmainutils
 bsdutils
 btsync
+btsync-common
 build-essential
 busybox-initramfs
 busybox-static
@@ -77,6 +78,7 @@ grub-common
 grub-pc
 gzip
 hdparm
+hopenpgp-tools
 hostname
 htop
 idle3-tools
@@ -117,6 +119,7 @@ libapt-pkg4.12
 libarchive-extract-perl
 libasn1-8-heimdal
 libasprintf0c2
+libatm1
 libattr1
 libaudit-common
 libaudit1
@@ -161,6 +164,7 @@ libgcr-3-common
 libgcr-base-3-1
 libgcrypt11
 libgdbm3
+libgdk-pixbuf2.0-dev
 libgeoip1
 libgirepository-1.0-1
 libglib2.0-0
@@ -211,6 +215,7 @@ libnewt0.52
 libnfnetlink0
 libnih-dbus1
 libnih1
+libnss-winbind
 libntdb1
 libnuma1
 libp11-kit0
@@ -220,6 +225,7 @@ libpam-modules-bin
 libpam-runtime
 libpam-smbpass
 libpam-systemd
+libpam-winbind
 libpam0g
 libparted0debian1
 libpcap0.8
@@ -311,6 +317,7 @@ man-db
 manpages
 mawk
 mc
+mdadm
 memtest86+
 mhddfs
 mime-support
@@ -375,6 +382,7 @@ python-tdb
 python-twisted-bin
 python-twisted-core
 python-urllib3
+python-wheel
 python-zope.interface
 python3
 python3-apport
