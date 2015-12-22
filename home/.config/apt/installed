@@ -1,7 +1,7 @@
 btsync
-btsync-common
 build-essential
 colordiff
+debian-keyring
 etckeeper
 fakeroot
 fdupes

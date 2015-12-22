@@ -172,8 +172,16 @@ libyaml-0-2
 linux-firmware
 linux-headers-3.13.0-66
 linux-headers-3.13.0-66-generic
+linux-headers-3.13.0-68
+linux-headers-3.13.0-68-generic
+linux-headers-3.13.0-71
+linux-headers-3.13.0-71-generic
 linux-image-3.13.0-66-generic
+linux-image-3.13.0-68-generic
+linux-image-3.13.0-71-generic
 linux-image-extra-3.13.0-66-generic
+linux-image-extra-3.13.0-68-generic
+linux-image-extra-3.13.0-71-generic
 linux-image-generic
 linux-libc-dev
 mailutils-common
