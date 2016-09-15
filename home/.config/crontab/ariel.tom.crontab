@@ -1,18 +1,12 @@
-@daily	mv ~/tmp/Evernote\ import/* ~/Dropbox/iPad/-evernote_tom
+*/5 * * * *	touch /Volumes/RAID10/.nosleep > /dev/null 2>&1
 
- @daily	cd /Users/tom && rsync -avzh --delete Documents/ tom@bethel:/pool/tom_Documents/
- @daily	cd /Users/tom && rsync -avzh --delete Downloads/ tom@bethel:/pool/tom_Downloads/
- @daily	cd /Users/tom && rsync -avzh --delete Music/ tom@bethel:/pool/tom_Music/
- @daily	cd /Users/tom && rsync -avzh --delete Pictures/ tom@bethel:/pool/tom_Pictures/
- @daily	cd /Volumes && rsync -avzh --delete --exclude=.DocumentRevisions-V100 --exclude=.MobileBackups --exclude=.Trashes --exclude=.Spotlight-V100 b/ tom@bethel:/pool/tom_b/
+#@hourly	~/bin/ddns
 
-@daily	cd /Volumes/RAID10 && rsync -avzh --delete Archive/ tom@bethel:/pool/RAID10_Archive/
-@daily	cd /Volumes/RAID10 && rsync -avzh --delete Downloads/ tom@bethel:/pool/RAID10_Downloads/
-@daily	cd /Volumes/RAID10 && rsync -avzh --delete Music/ tom@bethel:/pool/RAID10_Music/
-@daily	cd /Volumes/RAID10 && rsync -avzh --delete Pictures/ tom@bethel:/pool/RAID10_Pictures/
-@daily	cd /Volumes/RAID10 && rsync -avzh --delete backups/ tom@bethel:/pool/RAID10_backups/
+@daily	~/bin/getMovieList
+#@daily	~/bin/rsyncBackup_daily
 
+#@weekly	~/bin/rsyncBackup_weekly
 @weekly	/usr/local/bin/brew list > ~/.config/homebrew/brew.installed
-@weekly	/usr/local/bin/brew-cask list > ~/.config/homebrew/cask.installed
+@weekly	/usr/local/bin/brew cask list > ~/.config/homebrew/cask.installed
 
 30	01	*	*	*	/Users/tom/Library/Application\ Support/SuperDuper\!/Scheduled\ Copies/SDUtil -i || open file:///Users/tom/Library/Application\%20Support/SuperDuper\%21/Scheduled\%20Copies/Smart\%20Update\%20SDbackup\%20from\%20a.sdsp/Copy\%20Job.app
