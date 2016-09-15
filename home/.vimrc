@@ -1,3 +1,6 @@
+" Make Vim more useful
+set nocompatible
+
 " vim-pathogen
 execute pathogen#infect()
 syntax on
@@ -12,9 +15,43 @@ autocmd VimEnter * Helptags
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
+" per https://github.com/airblade/vim-gitgutter:
+"   highlight clear SignColumn
+" as this didn't work, had to edit
+" ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim and changed the
+" SignColumn from
+"   exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0
+" to
+"   exe "hi! SignColumn"     .s:fmt_none   .s:fg_base01 .s:bg_base02
+" to match the colors in the LineNr column
 
-" Make Vim more useful
-set nocompatible
+" prevent vim-bufferline from echoing buffer names to command bar
+let g:bufferline_echo = 0
+
+" Exit insert mode without using Esc (http://blog.unixphilosopher.com/2015/02/five-weird-vim-tricks.html)
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+" Allow mispelings when :wq-ing (http://blog.unixphilosopher.com/2015/02/five-weird-vim-tricks.html)
+cabbrev ew :wq
+cabbrev qw :wq
+
+" Switch windows with two keystrokes (http://blog.unixphilosopher.com/2015/02/five-weird-vim-tricks.html)
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-l> <c-w>l
+noremap <c-h> <c-w>h
+
+" Enter command mode with one keystroke (http://blog.unixphilosopher.com/2015/02/five-weird-vim-tricks.html)
+nnoremap ; :
+"nnoremap : ;
+
+" Start an external command with a single bang (http://blog.unixphilosopher.com/2015/02/five-weird-vim-tricks.html)
+nnoremap ! :!
+
+" Auto-save a file when you leave insert mode (http://blog.unixphilosopher.com/2015/02/five-weird-vim-tricks.html)
+autocmd InsertLeave * if expand('%') != '' | update | endif
+
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
