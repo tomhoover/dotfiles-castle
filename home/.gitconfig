@@ -75,6 +75,9 @@
 		fi \
 	}; f"
 
+# what it says -- undo the last commit
+undo-commit = git reset HEAD~
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
