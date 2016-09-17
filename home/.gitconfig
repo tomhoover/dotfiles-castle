@@ -76,7 +76,7 @@
 	}; f"
 
 # what it says -- undo the last commit
-undo-commit = git reset HEAD~
+undo-commit = reset HEAD~
 
 [apply]
 
