@@ -139,3 +139,28 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+alias diff=colordiff
+
+### docker
+## containers
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+# force kill and remove all docker containers
+alias drmf='docker rm -f $(docker ps -aq)'
+## images
+# 'dclean "<none>"' to remove all images with a name and/or a tag of <none>. use 'docker images' to list all
+dclean() { docker rmi -f $(docker images | grep $1 | awk '{print $3}'); }
+# delete untagged (dangling) images (i.e. <none>)
+#docker rmi $(docker images -f "dangling=true" -q)
+#
+## volumes
+# If we want to remove all orphaned containers at once we can use this command:
+# docker volume rm $(docker volume ls | awk '{print $2}')
+#
+# To get just the volume name you can run
+# docker volume ls -q
+#
+# To remove dangling volumes only
+# docker volume rm $(docker volume ls -qf dangling=true)
+#
