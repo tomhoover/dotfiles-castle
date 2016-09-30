@@ -22,7 +22,7 @@ unset file;
 [ -r ~/.config/dotfiles/`uname`.bashrc ] && . ~/.config/dotfiles/`uname`.bashrc
 [ -r ~/.config/dotfiles/`hostname -s`.bashrc ] && . ~/.config/dotfiles/`hostname -s`.bashrc
 
-. ~/src/z/z.sh
+. ~/src/github.com/rupa/z/z.sh
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 homeshick --quiet refresh
@@ -32,4 +32,4 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/src/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/src/github.com/nojhan/liquidprompt/liquidprompt

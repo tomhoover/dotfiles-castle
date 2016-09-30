@@ -2,6 +2,7 @@ autoconf
 bash-completion
 boost
 colordiff
+cscope
 dirmngr
 duplicity
 exiftool
@@ -15,8 +16,10 @@ glib
 gmp
 gnupg
 gnupg2
+go
 gpg-agent
 htop-osx
+hugo
 keybase
 keychain
 lame
@@ -37,6 +40,8 @@ libssh2
 libusb
 libusb-compat
 libvorbis
+lua
+macvim
 makedepend
 midnight-commander
 mkvtoolnix
@@ -66,6 +71,7 @@ ssh-copy-id
 tmux
 tree
 vcsh
+vim
 wget
 x264
 xvid
