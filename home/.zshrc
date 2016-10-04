@@ -24,18 +24,19 @@ unset file;
 [ -r ~/.config/dotfiles/`uname`.zshrc ] && . ~/.config/dotfiles/`uname`.zshrc
 [ -r ~/.config/dotfiles/`hostname -s`.zshrc ] && . ~/.config/dotfiles/`hostname -s`.zshrc
 
-. ~/src/github.com/rupa/z/z.sh
+source `brew --prefix`/etc/profile.d/z.sh
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 homeshick --quiet refresh
-fpath=($HOME/.zsh/completion $HOME/.homesick/repos/homeshick/completions $fpath)
+fpath=($HOME/.zsh/completions $HOME/.homesick/repos/homeshick/completions /usr/local/share/zsh/site-functions $fpath)
 # zsh completion is not working -- https://github.com/andsens/homeshick/issues/89
 #compinit
 # sudo -s gives "insecure directories and files" error -- https://github.com/Homebrew/homebrew/issues/7801
-compinit -u
+#compinit -u
+autoload -U compinit && compinit
 
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/src/github.com/nojhan/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source /usr/local/share/liquidprompt
