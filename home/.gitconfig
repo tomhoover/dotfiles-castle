@@ -78,6 +78,12 @@
 # what it says -- undo the last commit
 undo-commit = reset HEAD~
 
+# various git diff commands
+dom = diff origin/master
+dum = diff upstream/master
+dom-st = diff --name-status origin/master
+dum-st = diff --name-status upstream/master
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
