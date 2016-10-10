@@ -2,6 +2,9 @@
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	#l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	# thanks to Pete Doherty - see http://gitready.com/intermediate/2009/03/04/pick-out-individual-commits.html
+    #ll = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+
 	# thanks to Ted Naleid - https://github.com/tednaleid/understanding-git
 	l = log --graph --pretty='%Cred%h%Creset %C(yellow)%d%Creset %s %Cblue[%an]%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	la = !git l --all
@@ -91,9 +94,14 @@ dum-st = diff --name-status upstream/master
 
 [core]
 
-	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
+    # Use custom `.gitignore` and `.gitattributes`
+    # excludesfile = ~/.gitignore
+    # attributesfile = ~/.gitattributes
+
+    # use default location $XDG_CONFIG_HOME/git/[ignore|attributes] OR $HOME/.config/git/[ignore|attributes],
+    #   instead of:
+    # excludesfile = ~/.gitignore
+    # attributesfile = ~/.gitattributes
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
@@ -179,3 +187,8 @@ dum-st = diff --name-status upstream/master
 
 [include]
 	path = .config/git/user
+
+[pager]
+#	log = diff-highlight | less
+#	show = diff-highlight | less
+#	diff = diff-highlight | less

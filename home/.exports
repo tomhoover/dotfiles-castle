@@ -22,3 +22,7 @@ export GREP_OPTIONS='--color=auto';
 
 # setup Go workspace
 export GOPATH=$HOME
+
+# for gpg-agent
+GPG_TTY=$(tty)
+export GPG_TTY

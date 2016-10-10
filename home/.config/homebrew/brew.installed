@@ -4,6 +4,7 @@ boost
 colordiff
 cscope
 dirmngr
+docutils
 duplicity
 exiftool
 fdupes
@@ -28,6 +29,7 @@ lame
 libassuan
 libdvdcss
 libebml
+libelf
 libevent
 libffi
 libgcrypt
@@ -69,6 +71,7 @@ s-lang
 s3cmd
 scons
 sleepwatcher
+sphinx-doc
 sqlite
 ssh-copy-id
 tree
